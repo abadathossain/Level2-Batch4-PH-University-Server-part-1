@@ -22,7 +22,7 @@ const createStudentIntoDB = async (password: string, studentData: TStudent) => {
 
   //create a student bangla method
   if (Object.keys(newUser).length) {
-    // set id , _id as user
+    // set id , _id as user(must need difference to generate id and refernce id)
     studentData.id = newUser.id;
     studentData.user = newUser._id; //reference _id
 
